@@ -1,0 +1,26 @@
+#snake ladder
+n = int(input('enter move:'))    
+def snake_and_ladder_game(n):
+    if n >= 30: 
+        return ('player wins')
+    elif n== 3:
+        print('ladder 1')
+        n = 8
+    elif n == 7:
+        print('ladder 2')        
+        n = 11      
+    elif n == 20: 
+        print('ladder 3')       
+        n = 25       
+    elif n == 29:
+        print('snake 1')      
+        n = 4      
+    elif n ==15: 
+        print('snake 2')        
+        n = 2       
+    m = int(input('enter move :'))
+    return snake_and_ladder_game(n+m)
+n = int(input('enter move:'))   
+print(snake_and_ladder_game(n))
+    
+    
