@@ -1,0 +1,9 @@
+import random
+def roll_dice():
+        n = random.randint(1,6)
+        y = random.randint(1,6)
+        return n,y
+ch = 'y'
+while ch=='y':
+    print(roll_dice())
+    ch = input('do wanna roll the dice again y/n')
